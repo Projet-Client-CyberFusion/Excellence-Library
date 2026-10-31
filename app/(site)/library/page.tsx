@@ -12,9 +12,10 @@ export default async function PersonalLibraryPage() {
   return (
     <>
       <section className="relative isolate overflow-hidden bg-navy text-ivory">
-        <Image src="/backgrounds/library.jpg" alt="" aria-hidden="true" fill sizes="100vw" priority className="-z-20 object-cover object-center" />
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-r from-navy via-navy/90 to-navy/60" />
-        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
+        <Image src="/backgrounds/library.jpg" alt="" aria-hidden="true" fill sizes="100vw" priority className="-z-20 object-cover object-center brightness-[0.7] contrast-[1.1]" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-br from-navy via-navy/80 to-transparent" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_70%_20%,rgba(198,161,91,0.15),transparent_50%)]" />
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24">
           <p className="text-sm text-ivory/70">Your account</p>
           <h1 className="font-serif text-3xl font-semibold sm:text-4xl">My library</h1>
           <p className="mt-2 text-ivory/75">Your saved books and recent reading progress.</p>

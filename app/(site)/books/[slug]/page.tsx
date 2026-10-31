@@ -46,8 +46,9 @@ export default async function BookDetailsPage({ params }: { params: Promise<{ sl
   return (
     <>
       <section className="relative isolate overflow-hidden bg-navy text-ivory">
-        <Image src="/backgrounds/book-detail.jpg" alt="" aria-hidden="true" fill sizes="100vw" priority className="-z-20 object-cover object-center" />
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-r from-navy via-navy/90 to-navy/60" />
+        <Image src="/backgrounds/book-detail.jpg" alt="" aria-hidden="true" fill sizes="100vw" priority className="-z-20 object-cover object-center brightness-[0.7] contrast-[1.1]" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-br from-navy via-navy/80 to-transparent" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_70%_20%,rgba(198,161,91,0.15),transparent_50%)]" />
         <div aria-hidden="true" className="absolute -top-28 -right-20 -z-10 size-80 rounded-full border border-ivory/10" />
         <div aria-hidden="true" className="absolute -top-16 -right-8 -z-10 size-56 rounded-full border border-ivory/[0.07]" />
         <div className="mx-auto max-w-6xl px-4 pt-6 pb-10 sm:px-6 sm:pt-8 sm:pb-14 lg:pt-10">

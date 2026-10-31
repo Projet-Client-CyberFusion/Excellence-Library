@@ -56,9 +56,10 @@ export async function CatalogView({
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
-      <header className="relative isolate mb-8 overflow-hidden rounded-3xl bg-navy px-6 py-8 text-ivory sm:px-9 sm:py-10">
-        <Image src={headerBackground} alt="" aria-hidden="true" fill sizes="100vw" className="-z-20 object-cover object-center" />
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-r from-navy via-navy/90 to-navy/60" />
+      <header className="relative isolate mb-8 overflow-hidden rounded-3xl bg-navy px-6 py-10 text-ivory sm:px-9 sm:py-14 lg:py-20">
+        <Image src={headerBackground} alt="" aria-hidden="true" fill sizes="100vw" className="-z-20 object-cover object-center brightness-[0.8] contrast-[1.1]" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-br from-navy via-navy/85 to-transparent" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_70%_20%,rgba(198,161,91,0.15),transparent_50%)]" />
         <div aria-hidden="true" className="absolute -right-12 -top-24 -z-10 size-72 rounded-full border border-ivory/10" />
         <div className="relative max-w-3xl">
           <p className="mb-2 text-xs font-semibold tracking-[0.18em] text-gold uppercase">The reading room</p>

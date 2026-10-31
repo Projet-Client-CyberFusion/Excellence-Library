@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   description: 'Your digital space for reading and learning.',
   generator: 'v0.app',
   icons: {
-    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
-    apple: '/apple-icon.png',
+    icon: [{ url: '/logo.jpeg', type: 'image/jpeg' }],
+    apple: '/logo.jpeg',
   },
   other: { google: 'notranslate' },
 }

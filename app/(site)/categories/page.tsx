@@ -20,9 +20,10 @@ export default async function CategoriesPage() {
   return (
     <>
       <header className="relative isolate overflow-hidden bg-navy text-ivory">
-        <Image src={HEADER_BACKGROUND} alt="" aria-hidden="true" fill sizes="100vw" className="-z-20 object-cover object-center" />
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-r from-navy via-navy/90 to-navy/60" />
-        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20">
+        <Image src={HEADER_BACKGROUND} alt="" aria-hidden="true" fill sizes="100vw" priority className="-z-20 object-cover object-center brightness-[0.8] contrast-[1.1]" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-br from-navy via-navy/85 to-transparent" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_70%_20%,rgba(198,161,91,0.15),transparent_50%)]" />
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:py-32">
           <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-gold uppercase">Browse the collection</p>
           <h1 className="max-w-3xl font-serif text-4xl font-semibold text-balance sm:text-5xl">Follow your curiosity.</h1>
           <p className="mt-4 max-w-2xl leading-relaxed text-ivory/70">From English learning to classic literature, find a shelf that meets you where your interests are.</p>
