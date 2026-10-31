@@ -1,0 +1,18 @@
+# Configuration de déploiement Netlify — Excellence Library (Next.js 16).
+# Le runtime Next.js (@netlify/plugin-nextjs) est installé automatiquement par
+# Netlify pour Next.js 13.5+ : ne pas l'épingler ici, il se met à jour à chaque build.
+
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Variable d'environnement requise à l'exécution par le backend :
+#   DRY_API_URL = https://dryapi.onrender.com
+#
+# À définir dans Netlify → Site configuration → Environment variables,
+# avec les scopes "Builds" ET "Functions".
+# Netlify ne lit netlify.toml qu'au moment du build : une variable déclarée ici
+# ne serait pas visible par les fonctions serverless (SSR, routes API, middleware).
