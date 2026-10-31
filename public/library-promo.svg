@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" fill="none">
+  <defs>
+    <linearGradient id="paper" x1="460" y1="60" x2="460" y2="380" gradientUnits="userSpaceOnUse"><stop stop-color="#F4EBDD"/><stop offset="1" stop-color="#D8C7AA"/></linearGradient>
+    <linearGradient id="pages" x1="440" y1="108" x2="440" y2="332" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFCF3"/><stop offset="1" stop-color="#E4D5BD"/></linearGradient>
+    <linearGradient id="coffee" x1="744" y1="181" x2="832" y2="270" gradientUnits="userSpaceOnUse"><stop stop-color="#F8F3E8"/><stop offset="1" stop-color="#CDB99A"/></linearGradient>
+  </defs>
+  <path d="M0 0h920v380H0z" fill="url(#paper)"/>
+  <circle cx="732" cy="175" r="170" fill="#CBB99E" opacity=".18"/>
+  <path d="M60 324c180-35 357-31 525 0 130 24 227 21 335-1v57H0v-35l60-21Z" fill="#C7B392" opacity=".4"/>
+  <ellipse cx="445" cy="308" rx="310" ry="28" fill="#5E4933" opacity=".14"/>
+  <!-- open book -->
+  <path d="M120 117c126-23 234-5 328 58v150c-95-55-206-73-328-52V117Z" fill="url(#pages)" stroke="#C8B99F" stroke-width="3"/>
+  <path d="M448 175c98-62 213-82 343-55v158c-126-19-239-1-343 47V175Z" fill="url(#pages)" stroke="#C8B99F" stroke-width="3"/>
+  <path d="M449 175v150" stroke="#B9A78D" stroke-width="4"/>
+  <g stroke="#C9BDA9" stroke-width="2" opacity=".8">
+    <path d="M153 156c92-12 177 0 258 43M153 177c92-12 177 0 258 43M153 198c92-12 177 0 258 43M153 219c92-12 177 0 258 43M153 240c92-12 177 0 258 43"/>
+    <path d="M492 219c89-44 183-59 270-48M492 240c89-44 183-59 270-48M492 261c89-44 183-59 270-48M492 282c89-44 183-59 270-48"/>
+  </g>
+  <!-- reading glasses -->
+  <g stroke="#242B25" stroke-width="8" fill="none">
+    <ellipse cx="410" cy="174" rx="54" ry="34" transform="rotate(-15 410 174)"/><ellipse cx="520" cy="147" rx="54" ry="34" transform="rotate(-15 520 147)"/>
+    <path d="m461 158 12-4M356 170l-39 13M572 140l34-17" stroke-linecap="round"/>
+  </g>
+  <!-- a cup of tea -->
+  <ellipse cx="791" cy="282" rx="62" ry="14" fill="#775A3A" opacity=".2"/>
+  <path d="M734 192h112v58c0 24-19 43-43 43h-26c-24 0-43-19-43-43v-58Z" fill="url(#coffee)" stroke="#B8A688" stroke-width="3"/>
+  <path d="M846 206h19c17 0 27 11 27 25s-10 25-27 25h-19" stroke="#C9B99B" stroke-width="11"/>
+  <path d="M753 194h72" stroke="#724F33" stroke-width="8" stroke-linecap="round"/>
+  <!-- quiet sprig -->
+  <path d="M854 130c-14-44-27-72-54-96M857 133c14-48 37-75 70-95" stroke="#5D7255" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#859273"><ellipse cx="810" cy="68" rx="12" ry="29" transform="rotate(-36 810 68)"/><ellipse cx="827" cy="90" rx="12" ry="29" transform="rotate(38 827 90)"/><ellipse cx="902" cy="65" rx="12" ry="29" transform="rotate(39 902 65)"/><ellipse cx="884" cy="91" rx="12" ry="29" transform="rotate(-38 884 91)"/></g>
+</svg>

@@ -1,0 +1,149 @@
+/*
+ * ==========================================================================
+ * CHARTE DE COULEURS OFFICIELLE — English Digital Library
+ * ==========================================================================
+ * Source unique de vérité pour l'ensemble des couleurs du site.
+ * Modifier une valeur ici met automatiquement à jour toutes les pages.
+ *
+ * Couleurs de marque (valeurs hexadécimales strictes) :
+ *   Bleu nuit (#142B4A) · Ivoire (#F7F3EA) · Or (#C6A15B) · Blanc (#FFFFFF)
+ *
+ * Conformité WCAG 2.1 (contrastes vérifiés — AA) :
+ *   Bleu nuit  / Ivoire   -> 12,9:1   (texte normal OK)
+ *   Bleu nuit  / Blanc    -> 14,2:1   (texte normal OK)
+ *   Blanc      / Bleu nuit-> 14,2:1
+ *   Ivoire     / Bleu nuit-> 12,9:1
+ *   Or         / Bleu nuit->  5,9:1   (texte normal OK sur fond sombre)
+ *   Bleu nuit  / Or       ->  5,9:1   (texte normal OK sur fond or)
+ *   Neutre doux/ Ivoire   ->  5,3:1
+ *
+ * Règle d'emploi : l'Or n'est JAMAIS utilisé comme texte sur fond clair
+ * (ivoire/blanc) car le contraste y serait de 2,2:1 / 2,4:1 (échec AA).
+ * Il sert d'accent sur fond Bleu nuit et d'élément décoratif (filets,
+ * bordures, fonds) sur les surfaces claires.
+ * ==========================================================================
+ */
+
+:root {
+  color-scheme: light;
+
+  /* ---- Couleurs de marque ---- */
+  --brand-navy: #142b4a; /* Bleu nuit — couleur principale */
+  --brand-ivory: #f7f3ea; /* Ivoire — fond principal */
+  --brand-gold: #c6a15b; /* Or — accent */
+  --brand-white: #ffffff; /* Blanc — surfaces */
+
+  /* ---- Neutres dérivés (issus du bleu nuit) ---- */
+  --brand-line: #e4dccb; /* filets et séparateurs fins */
+  --brand-line-strong: #cfc4ac; /* bordures de champs */
+  --brand-muted: #56667d; /* texte secondaire (5,3:1 sur ivoire) */
+  --brand-surface: #efe9dc; /* surfaces alternées */
+  --brand-gold-soft: #ebdec6; /* fond or très clair (décor) */
+
+  /* ---- Rôles sémantiques ---- */
+  --radius: 0.625rem;
+
+  --background: var(--brand-ivory);
+  --foreground: var(--brand-navy);
+
+  --card: var(--brand-white);
+  --card-foreground: var(--brand-navy);
+  --popover: var(--brand-white);
+  --popover-foreground: var(--brand-navy);
+
+  --primary: var(--brand-navy);
+  --primary-foreground: var(--brand-white);
+
+  --secondary: var(--brand-surface);
+  --secondary-foreground: var(--brand-navy);
+
+  --muted: var(--brand-surface);
+  --muted-foreground: var(--brand-muted);
+
+  --accent: var(--brand-gold-soft);
+  --accent-foreground: var(--brand-navy);
+
+  --highlight: var(--brand-gold);
+  --highlight-foreground: var(--brand-navy);
+
+  --success: #2e6b4f;
+  --warning: #8a5a00;
+  --destructive: #a32a24;
+
+  --border: var(--brand-line);
+  --input: var(--brand-line-strong);
+  --ring: var(--brand-gold);
+
+  --chart-1: var(--brand-navy);
+  --chart-2: var(--brand-gold);
+  --chart-3: #7f6127;
+  --chart-4: #2e6b4f;
+  --chart-5: #a32a24;
+
+  --sidebar: var(--brand-surface);
+  --sidebar-foreground: var(--brand-navy);
+  --sidebar-primary: var(--brand-navy);
+  --sidebar-primary-foreground: var(--brand-white);
+  --sidebar-accent: var(--brand-gold-soft);
+  --sidebar-accent-foreground: var(--brand-navy);
+  --sidebar-border: var(--brand-line);
+  --sidebar-ring: var(--brand-gold);
+}
+
+/*
+ * Thème sombre : le Bleu nuit devient le fond, l'Ivoire le texte et
+ * l'Or l'accent. Tout reste issu des seules couleurs de marque.
+ */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    color-scheme: dark;
+
+    --brand-line: rgb(255 255 255 / 14%);
+    --brand-line-strong: rgb(255 255 255 / 22%);
+    --brand-muted: #b4c0d2; /* 7,7:1 sur bleu nuit */
+    --brand-surface: #1c3660;
+    --brand-gold-soft: #2a4a78;
+
+    --background: var(--brand-navy);
+    --foreground: var(--brand-ivory);
+
+    --card: #1c3660;
+    --card-foreground: var(--brand-ivory);
+    --popover: #1c3660;
+    --popover-foreground: var(--brand-ivory);
+
+    --primary: var(--brand-gold);
+    --primary-foreground: var(--brand-navy);
+
+    --secondary: #22406e;
+    --secondary-foreground: var(--brand-ivory);
+
+    --muted: #22406e;
+    --muted-foreground: var(--brand-muted);
+
+    --accent: #2a4a78;
+    --accent-foreground: var(--brand-ivory);
+
+    --highlight: var(--brand-gold);
+    --highlight-foreground: var(--brand-navy);
+
+    --border: var(--brand-line);
+    --input: var(--brand-line-strong);
+    --ring: var(--brand-gold);
+
+    --chart-1: var(--brand-gold);
+    --chart-2: var(--brand-ivory);
+    --chart-3: #e4cd97;
+    --chart-4: #7bbd9a;
+    --chart-5: #e08a84;
+
+    --sidebar: #1c3660;
+    --sidebar-foreground: var(--brand-ivory);
+    --sidebar-primary: var(--brand-gold);
+    --sidebar-primary-foreground: var(--brand-navy);
+    --sidebar-accent: #2a4a78;
+    --sidebar-accent-foreground: var(--brand-ivory);
+    --sidebar-border: var(--brand-line);
+    --sidebar-ring: var(--brand-gold);
+  }
+}

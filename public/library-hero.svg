@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 650" fill="none">
+  <defs>
+    <linearGradient id="table" x1="480" y1="348" x2="480" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#F4ECDD"/><stop offset="1" stop-color="#E5D8C4"/></linearGradient>
+    <linearGradient id="cover1" x1="171" y1="193" x2="275" y2="470" gradientUnits="userSpaceOnUse"><stop stop-color="#F5EFE2"/><stop offset="1" stop-color="#D9CCB6"/></linearGradient>
+    <linearGradient id="cover2" x1="283" y1="146" x2="362" y2="482" gradientUnits="userSpaceOnUse"><stop stop-color="#C98D56"/><stop offset="1" stop-color="#8E5638"/></linearGradient>
+    <linearGradient id="cover3" x1="370" y1="165" x2="469" y2="494" gradientUnits="userSpaceOnUse"><stop stop-color="#426A55"/><stop offset="1" stop-color="#234538"/></linearGradient>
+    <linearGradient id="vase" x1="674" y1="350" x2="785" y2="529" gradientUnits="userSpaceOnUse"><stop stop-color="#E7D6B9"/><stop offset="1" stop-color="#BCA88A"/></linearGradient>
+    <linearGradient id="cup" x1="557" y1="424" x2="689" y2="523" gradientUnits="userSpaceOnUse"><stop stop-color="#FBF8EF"/><stop offset="1" stop-color="#D8C9B1"/></linearGradient>
+    <filter id="shadow" x="89" y="90" width="760" height="510" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <circle cx="480" cy="306" r="257" fill="#E9E2D4"/>
+  <circle cx="480" cy="306" r="226" stroke="#D9D0C0" stroke-width="2"/>
+  <path d="M0 395c200-34 390-27 588 7 139 24 251 22 372-2v250H0V395Z" fill="url(#table)"/>
+  <ellipse cx="474" cy="502" rx="350" ry="45" fill="#584635" opacity=".16" filter="url(#shadow)"/>
+  <!-- A cluster of open-edition hardbacks -->
+  <g filter="url(#shadow)" opacity=".18"><rect x="181" y="185" width="300" height="315" rx="8" fill="#352B21"/></g>
+  <g>
+    <path d="M175 177h92v310h-92c-8 0-14-6-14-14V191c0-8 6-14 14-14Z" fill="url(#cover1)" stroke="#C6B9A3" stroke-width="2"/>
+    <path d="M180 188v287" stroke="#fff" stroke-opacity=".65" stroke-width="4"/>
+    <path d="M191 215h62M191 225h48" stroke="#A7967D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M198 271h52" stroke="#B59B72" stroke-width="2"/>
+    <text x="218" y="364" fill="#36433C" font-family="Georgia,serif" font-size="18" font-weight="bold" transform="rotate(-90 218 364)">THE KINFOLK</text>
+    <text x="192" y="458" fill="#7C6A50" font-family="Arial,sans-serif" font-size="8" letter-spacing="2">OPEN EDITION</text>
+
+    <path d="M271 151h81v336h-81z" fill="url(#cover2)" stroke="#7B4D35" stroke-width="2"/>
+    <path d="M279 160v317" stroke="#F0D1A8" stroke-opacity=".48" stroke-width="3"/>
+    <path d="M289 177h46v2h-46zM289 184h39v2h-39z" fill="#F2D6B4" opacity=".7"/>
+    <text x="317" y="389" fill="#F8EAD3" font-family="Georgia,serif" font-size="18" font-weight="bold" transform="rotate(-90 317 389)">CLASSIC STORIES</text>
+
+    <path d="M355 168h96v331h-96z" fill="url(#cover3)" stroke="#1D4034" stroke-width="2"/>
+    <path d="M364 178v311" stroke="#B9C5A5" stroke-opacity=".45" stroke-width="3"/>
+    <path d="M379 196c11-18 31-18 42 0-11 18-31 18-42 0Z" stroke="#D6C99C" stroke-width="1.5"/>
+    <text x="407" y="395" fill="#F1E8D4" font-family="Georgia,serif" font-size="18" font-weight="bold" transform="rotate(-90 407 395)">THE TIME MACHINE</text>
+
+    <path d="M453 190h71v314h-71z" fill="#D1B693" stroke="#AA9373" stroke-width="2"/>
+    <path d="M461 199v295" stroke="#F4E7D2" stroke-opacity=".65" stroke-width="3"/>
+    <text x="489" y="393" fill="#654D3C" font-family="Georgia,serif" font-size="16" font-weight="bold" transform="rotate(-90 489 393)">WONDERLAND</text>
+  </g>
+  <!-- leafy branch and ceramic vase -->
+  <g stroke="#566C4B" stroke-width="5" stroke-linecap="round">
+    <path d="M732 362c-8-111-47-173-101-228M739 364c6-137 50-217 102-264M735 357c-31-94-31-157-22-220M741 356c27-94 48-149 77-198"/>
+  </g>
+  <g fill="#81906A">
+    <ellipse cx="618" cy="169" rx="15" ry="39" transform="rotate(-42 618 169)"/><ellipse cx="646" cy="194" rx="14" ry="37" transform="rotate(36 646 194)"/>
+    <ellipse cx="829" cy="129" rx="14" ry="39" transform="rotate(38 829 129)"/><ellipse cx="799" cy="157" rx="14" ry="38" transform="rotate(-34 799 157)"/>
+    <ellipse cx="708" cy="170" rx="13" ry="36" transform="rotate(-24 708 170)"/><ellipse cx="717" cy="215" rx="14" ry="37" transform="rotate(28 717 215)"/>
+    <ellipse cx="790" cy="205" rx="13" ry="37" transform="rotate(35 790 205)"/><ellipse cx="766" cy="239" rx="14" ry="36" transform="rotate(-34 766 239)"/>
+  </g>
+  <path d="M690 355h99c-3 72-14 123-31 159-7 14-29 19-39 7-18-23-27-84-29-166Z" fill="url(#vase)" stroke="#B7A486" stroke-width="2"/>
+  <path d="M700 357h79" stroke="#F5E7CF" stroke-width="5" stroke-linecap="round"/>
+  <!-- coffee cup -->
+  <ellipse cx="607" cy="510" rx="76" ry="16" fill="#A68F70" opacity=".22"/>
+  <path d="M557 430h120v66c0 24-19 43-43 43h-35c-23 0-42-19-42-43v-66Z" fill="url(#cup)" stroke="#C8B89F" stroke-width="3"/>
+  <path d="M677 447h19c19 0 29 12 29 28s-10 28-29 28h-19" stroke="#D7C7AE" stroke-width="12"/>
+  <path d="M578 432h78" stroke="#B68A57" stroke-width="7" stroke-linecap="round"/>
+  <path d="M579 432h77" stroke="#5A4031" stroke-width="4" stroke-linecap="round"/>
+</svg>
