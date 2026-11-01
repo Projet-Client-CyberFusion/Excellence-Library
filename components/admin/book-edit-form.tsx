@@ -238,7 +238,7 @@ export function BookEditForm({ book, categories, isAdmin }: { book: Book; catego
       <div className="flex min-w-0 flex-col gap-6 lg:order-1">
         <FormSection title="Book details" description="The title and author names are shown on every card and on the book page.">
           <TextField label="Title" name="title" required defaultValue={book.title} />
-          <TextField label="Author names (comma separated)" name="authors" required defaultValue={book.authors?.join(', ')} />
+          <TextField label="Author names (comma separated)" name="authors" defaultValue={book.authors?.join(', ')} hint="Optional — leave empty when the author is unknown." />
           <div className="flex flex-col gap-1.5 sm:col-span-2">
             <Label htmlFor="book-field-description">Description (English)</Label>
             <Textarea id="book-field-description" name="description" defaultValue={book.description} maxLength={5000} rows={5} />
@@ -265,13 +265,13 @@ export function BookEditForm({ book, categories, isAdmin }: { book: Book; catego
           <TextField label="ISBN" name="isbn" className="sm:col-span-2" defaultValue={book.isbn} />
         </FormSection>
 
-        <FormSection title="Access and rights" description="Rights details are required before an administrator can publish the book.">
+        <FormSection title="Access and rights" description="A source note is required before an administrator can approve distribution rights.">
           <SelectField label="Access" name="visibility" defaultValue={book.visibility || 'public'}>
             <option value="public">Public — everyone</option>
             <option value="registered">Registered users only</option>
             <option value="staff">Staff only</option>
           </SelectField>
-          <TextField label="License" name="license" required defaultValue={book.license} />
+          <TextField label="License" name="license" defaultValue={book.license} hint="Optional." />
           <TextField label="Source / rights details" name="source" className="sm:col-span-2" defaultValue={book.source} />
           <label className="flex items-start gap-2.5 rounded-lg border border-border/70 bg-muted/30 px-3 py-2.5 sm:col-span-2">
             <input id="book-field-downloadAllowed" name="downloadAllowed" type="checkbox" defaultChecked={book.downloadAllowed} className="mt-0.5 size-4 shrink-0" />

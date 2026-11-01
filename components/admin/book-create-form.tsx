@@ -101,9 +101,9 @@ export function BookCreateForm({ categories }: { categories: CategoryOption[] })
       </aside>
 
       <div className="flex min-w-0 flex-col gap-6 lg:order-1">
-        <FormSection title="Book details" description="The title and author names are shown on every card and on the book page.">
+        <FormSection title="Book details" description="The title is shown on every card and on the book page; author names are optional.">
           <TextField label="Title" name="title" required value={title} onChange={event => setTitle(event.currentTarget.value)} placeholder="Frankenstein" />
-          <TextField label="Author names (comma separated)" name="authors" required value={authors} onChange={event => setAuthors(event.currentTarget.value)} placeholder="Mary Shelley, Percy Shelley" />
+          <TextField label="Author names (comma separated)" name="authors" value={authors} onChange={event => setAuthors(event.currentTarget.value)} placeholder="Mary Shelley, Percy Shelley" hint="Optional — leave empty when the author is unknown." />
           <div className="flex flex-col gap-1.5 sm:col-span-2">
             <Label htmlFor="book-field-description">Description (English)</Label>
             <Textarea id="book-field-description" name="description" maxLength={5000} rows={5} placeholder="A short English summary shown on the book page." />
@@ -130,13 +130,13 @@ export function BookCreateForm({ categories }: { categories: CategoryOption[] })
           <TextField label="ISBN" name="isbn" className="sm:col-span-2" placeholder="9780141439471" />
         </FormSection>
 
-        <FormSection title="Access and rights" description="Rights details are required before an administrator can publish the book.">
+        <FormSection title="Access and rights" description="A source note is required before an administrator can publish the book.">
           <SelectField label="Access" name="visibility" defaultValue="public">
             <option value="public">Public — everyone</option>
             <option value="registered">Registered users only</option>
             <option value="staff">Staff only</option>
           </SelectField>
-          <TextField label="License" name="license" required placeholder="Public domain in the United States." />
+          <TextField label="License" name="license" hint="Optional." placeholder="Public domain in the United States." />
           <TextField label="Source / rights details" name="source" className="sm:col-span-2" hint="Leave empty to record a direct administrator upload." placeholder="Project Gutenberg, eBook #84" />
           <label className="flex items-start gap-2.5 rounded-lg border border-border/70 bg-muted/30 px-3 py-2.5 sm:col-span-2">
             <input id="book-field-downloadAllowed" name="downloadAllowed" type="checkbox" className="mt-0.5 size-4 shrink-0" />

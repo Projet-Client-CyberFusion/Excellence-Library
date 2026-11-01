@@ -21,7 +21,7 @@ export default async function ReadBookPage({ params }: { params: Promise<{ slug:
         <header className="sticky top-0 z-30 border-b border-navy bg-navy text-ivory shadow-lg">
           <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-3 px-3 sm:px-6">
             <Link href={`/books/${book.slug}`} className="inline-flex shrink-0 items-center gap-2 rounded-full px-3 py-2 text-xs font-semibold text-ivory/75 transition hover:bg-ivory/10 hover:text-ivory sm:text-sm"><ArrowLeft className="size-4" aria-hidden="true" /><span className="hidden sm:inline">Library</span><span className="sm:hidden">Exit</span></Link>
-            <div className="min-w-0 flex-1 text-center sm:text-left"><p className="truncate text-sm font-semibold sm:text-base">{book.title}</p><p className="hidden truncate text-xs text-ivory/55 sm:block">{book.authors.join(', ')}</p></div>
+            <div className="min-w-0 flex-1 text-center sm:text-left"><p className="truncate text-sm font-semibold sm:text-base">{book.title}</p>{book.authors?.length ? <p className="hidden truncate text-xs text-ivory/55 sm:block">{book.authors.join(', ')}</p> : null}</div>
             <span className="hidden items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-2 text-xs text-gold md:inline-flex"><BookOpenCheck className="size-4" aria-hidden="true" /> Focus mode</span>
           </div>
         </header>
@@ -43,7 +43,7 @@ export default async function ReadBookPage({ params }: { params: Promise<{ slug:
       <header className="sticky top-0 z-30 border-b border-navy bg-navy text-ivory shadow-lg">
         <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-3 px-3 sm:px-6">
           <Link href={`/books/${book.slug}`} className="inline-flex shrink-0 items-center gap-2 rounded-full px-3 py-2 text-xs font-semibold text-ivory/75 transition hover:bg-ivory/10 hover:text-ivory sm:text-sm"><ArrowLeft className="size-4" aria-hidden="true" /><span className="hidden sm:inline">Library</span><span className="sm:hidden">Exit</span></Link>
-          <div className="min-w-0 flex-1 text-center sm:text-left"><p className="truncate text-sm font-semibold sm:text-base">{book.title}</p><p className="hidden truncate text-xs text-ivory/55 sm:block">{book.authors.join(', ')}</p></div>
+          <div className="min-w-0 flex-1 text-center sm:text-left"><p className="truncate text-sm font-semibold sm:text-base">{book.title}</p>{book.authors?.length ? <p className="hidden truncate text-xs text-ivory/55 sm:block">{book.authors.join(', ')}</p> : null}</div>
           {book.downloadAllowed ? <a className="inline-flex shrink-0 items-center gap-2 rounded-full border border-ivory/25 px-3 py-2 text-xs font-semibold text-ivory/80 transition hover:bg-ivory/10 hover:text-ivory" href={`/api/books/${encodeURIComponent(book.slug)}/download`}><Download className="size-4" aria-hidden="true" /><span className="hidden sm:inline">Download</span></a> : <span className="hidden rounded-full border border-gold/40 bg-gold/10 px-3 py-2 text-xs text-gold md:inline-flex">Focus mode</span>}
         </div>
       </header>

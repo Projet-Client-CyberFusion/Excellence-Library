@@ -16,7 +16,7 @@ export function BookCard({ book, progress, href }: { book: BookCardData; progres
       <div className="flex flex-1 flex-col gap-1 px-0.5 pb-1">
         {book.categoryName ? <p className="line-clamp-1 text-[10px] font-semibold tracking-[0.14em] text-primary/75 uppercase">{book.categoryName}</p> : null}
         <h3 className="line-clamp-2 font-serif text-base leading-snug font-semibold text-foreground group-hover:text-primary">{book.title}</h3>
-        <p className="mt-auto line-clamp-1 pt-1 text-xs text-muted-foreground">{book.authors.join(', ')}</p>
+        {book.authors?.length ? <p className="mt-auto line-clamp-1 pt-1 text-xs text-muted-foreground">{book.authors.join(', ')}</p> : null}
         {book.publicationYear ? <p className="text-[11px] text-muted-foreground/75">First published {book.publicationYear}</p> : null}
       </div>
     </Link>

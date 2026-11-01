@@ -10,6 +10,9 @@ const nextConfig = {
   },
   experimental: {
     serverActions: { bodySizeLimit: '2mb' },
+    // Réutilise le rendu déjà chargé lors des navigations répétées (précédent/suivant,
+    // retour au catalogue…) au lieu de tout redemander au serveur à chaque clic.
+    staleTimes: { dynamic: 30, static: 180 },
   },
   async headers() {
     return [

@@ -59,7 +59,7 @@ export function BookCover({
         <div className="my-auto py-5">
           <span className="mb-3 block h-px w-8" style={{ backgroundColor: colors.accent }} />
           <span className="line-clamp-5 block font-serif text-base leading-tight font-semibold text-balance sm:text-xl">{title}</span>
-          <span className="mt-3 block line-clamp-1 text-[10px] tracking-wide text-white/75 sm:text-xs">{authors.join(', ')}</span>
+          {authors.length ? <span className="mt-3 block line-clamp-1 text-[10px] tracking-wide text-white/75 sm:text-xs">{authors.join(', ')}</span> : null}
         </div>
         <div className="flex items-center justify-between border-t border-white/20 pt-2 text-[8px] tracking-[0.16em] text-white/65 uppercase sm:pt-3 sm:text-[9px]">
           <span>Open edition</span>

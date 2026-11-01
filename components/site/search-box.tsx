@@ -104,7 +104,7 @@ export function SearchBox({ compact = false, defaultValue = '' }: { compact?: bo
               className={cn('cursor-pointer px-3 py-2 text-left', i === active ? 'bg-accent' : 'hover:bg-accent')}
             >
               <span className="block truncate text-sm font-medium text-popover-foreground">{s.title}</span>
-              <span className="block truncate text-xs text-muted-foreground">{s.authors.join(', ')}</span>
+              {s.authors?.length ? <span className="block truncate text-xs text-muted-foreground">{s.authors.join(', ')}</span> : null}
             </li>
           ))}
         </ul>
