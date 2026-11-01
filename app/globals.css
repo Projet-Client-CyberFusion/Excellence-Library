@@ -5,6 +5,11 @@
 /* Charte de couleurs officielle : source unique de vérité (voir palette.css). */
 @import './palette.css';
 
+/* Styles des couches texte/annotation du lecteur PDF, chargés avec la page
+   pour éviter l'avertissement « TextLayer styles not found ». */
+@import 'react-pdf/dist/Page/AnnotationLayer.css';
+@import 'react-pdf/dist/Page/TextLayer.css';
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
